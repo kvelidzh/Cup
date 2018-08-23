@@ -1,0 +1,80 @@
+@import '_normalize';
+
+* {box-sizing: border-box;}
+
+$text-font: 'Raleway', sans-serif;
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+ 
+body {
+    font: 300 1.7rem/1.7 $text-font;
+    min-height: 100%;          
+}
+
+.bg {
+	background-color: #fdde7e;
+	height: 100vh;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	paddding: 0 15px;
+	background-color: #fdde7e;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+	height: 440px;
+	width: 360px;
+	background-color: #fff;
+	position: relative;
+	top: 100px;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+	&__price {
+		font-size: 7rem;
+		color: #02995b;
+		font-weight: 600;
+	}
+	&__cup {}
+	&__level {
+		font-size: 5.6rem;
+		font-weight: 500;
+		color: #333333;
+	}
+	&__info {
+		width: 50%;
+		margin: 0 auto;
+		font-size: 2rem;
+		font-weight: 500;
+		color: #333333;
+	}
+	&:hover,
+	&:focus {
+	transform: scale(1.1);
+	transition: all .5s ease-in-out;
+	}
+	&--bg {
+		height: 500px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
